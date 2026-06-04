@@ -13,9 +13,6 @@ app.use(express.json()); //Allows the server to read JSON data sent in the body 
 
 //An Array to store the todos
 let todos =[
-{id: 1, text :"Learn Node js", completed:false},
-{id: 2, text: "Build a Todo App", completed:false}
-
 ]
 //API Endpoints
 
