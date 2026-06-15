@@ -76,11 +76,11 @@ onMounted(fetchTodos);
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f3f4f6; /* Subtle light gray background */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f3f4f6; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Centers vertically on Desktop */
   min-height: 100vh;
 }
 
@@ -90,7 +90,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   width: 100%;
-  max-width: 450px; /* Original clean width constraints */
+  max-width: 450px; 
   box-sizing: border-box;
 }
 
@@ -191,5 +191,28 @@ li button {
 
 li button:hover {
   background-color: #dc2626;
+}
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start; /* Aligns the app to the top of the phone screen */
+    background-color: #ffffff; /* Optional: makes the whole screen seamlessly white on mobile */
+  }
+
+  #app {
+    margin: 0; /* Removes outer gaps so it utilizes the full phone screen width */
+    padding: 24px 16px; /* Slightly tighter padding so it fits small screens perfectly */
+    border-radius: 0px; /* Removes rounded corners so it looks like a native mobile app */
+    box-shadow: none; /* Removes the shadow since it fills the screen */
+    border: none;
+  }
+
+  .input-container {
+    flex-direction: column; /* Stacks the input and "Add Task" button vertically on small screens */
+    gap: 12px;
+  }
+
+  button {
+    width: 100%; /* Makes the button easy to tap with a thumb on mobile */
+  }
 }
 </style>
