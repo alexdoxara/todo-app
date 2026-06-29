@@ -1,10 +1,35 @@
-## Manual Test Suite Matrix
+Step by Step Installation guide 
 
-The following test cases were manually executed to verify the full-stack CRUD functionality of the application.
+Prerequisites 
 
-| Test ID | Feature Tested | Steps to Execute | Input Data | Expected Result | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **TC_01** | **Create** (POST) | 1. Type a task in the input field.<br>2. Click the "Add Task" button or press Enter. | `"Finish presentation"` | The task is instantly added to the list view; the text input field clears. | **PASSED** |
-| **TC_02** | **Validation** | 1. Leave the text input field completely blank.<br>2. Click the "Add Task" button. | `""` (Empty string) | The UI does not change; no empty item is added, and the backend ignores the request. | **PASSED** |
-| **TC_03** | **Update** (PUT) | 1. Click directly on an active text task in the list. | Target Item Click | A line-through style is applied, the text turns gray, and the state changes to completed. | **PASSED** |
-| **TC_04** | **Delete** (DELETE) | 1. Click the red "Delete" button next to any existing task. | Button Click | The selected task item animate-fades or instantly disappears from the UI completely. | **PASSED** |
+Before running this app, you mus have Node.js and npm installed on your machihe
+
+Step 1: Clone the Repository
+
+Open a terminal windows on your machine, navigate to the folder where you want to save the project and run: "git clone https://github.com/alexdoxara/todo-app"
+
+Now move directly into the newly created project root folder: 
+
+by running "cd todo-app"
+
+Step 2: Start the Backend Server
+
+From your main project folder, navigate into the backend directory, install the server dependencies, and turn the server engine on: 
+
+run: "cd backend
+      npm install
+      node server.js"
+
+Step 3: Start the Frontend Interface
+
+Open a completely new, seperate terminal tab in your code editior. Navigate into the frontend directory, install the Vue packaged, and launch the Vite development server:
+
+run "cd fronted
+     npm install
+     npm run dev"
+
+Expected result: The terminal will show a local web address like "http:localhost:5173/"
+
+Step 4: Open the App
+
+Copy the local address link shown in your frontend terminal, paste it into your web browser address bar and press Enter. This will lauch the Application
