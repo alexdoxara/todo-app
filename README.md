@@ -16,17 +16,17 @@ Step 2: Start the Backend Server
 
 From your main project folder, navigate into the backend directory, install the server dependencies, and turn the server engine on: 
 
-run: "cd backend
-      npm install
-      node server.js"
+run: "cd backend"
+     " npm install"
+      "node server.js"
 
 Step 3: Start the Frontend Interface
 
 Open a completely new, seperate terminal tab in your code editior. Navigate into the frontend directory, install the Vue packaged, and launch the Vite development server:
 
-run "cd fronted
-     npm install
-     npm run dev"
+run "cd fronted"
+    " npm install"
+    " npm run dev"
 
 Expected result: The terminal will show a local web address like "http:localhost:5173/"
 
