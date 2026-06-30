@@ -17,8 +17,8 @@ Step 2: Start the Backend Server
 From your main project folder, navigate into the backend directory, install the server dependencies, and turn the server engine on: 
 
 run: "cd backend"
-     " npm install"
-      "node server.js"
+" npm install"
+"node server.js"
 
 Step 3: Start the Frontend Interface
 
