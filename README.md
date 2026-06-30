@@ -24,8 +24,7 @@ Step 3: Start the Frontend Interface
 
 Open a completely new, seperate terminal tab in your code editior. Navigate into the frontend directory, install the Vue packaged, and launch the Vite development server:
 
-run each command: "cd frontend"
-"npm install"
+run each command: "npm install"
 "npm run dev"
 
 Expected result: The terminal will show a local web address like "http:localhost:5173/"
